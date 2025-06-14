@@ -21,4 +21,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "PopcornBrowse"
 include(":androidApp")
- 
+include(":desktopApp")
+include(":features:home")
+include(":core")
