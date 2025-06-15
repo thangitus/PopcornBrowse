@@ -8,4 +8,5 @@ plugins {
     alias(libs.plugins.serialization) apply false
     alias(libs.plugins.sqldelightDatabase) apply false
     alias(libs.plugins.android.kotlin.multiplatform.library) apply false
+    alias(libs.plugins.jetbrains.kotlin.jvm) apply false
 }
