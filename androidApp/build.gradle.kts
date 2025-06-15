@@ -2,38 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
-    alias(libs.plugins.jetbrainsCompose)
 }
 
-kotlin {
-    androidTarget {
-        compilations.all {
-            kotlinOptions {
-                jvmTarget = "1.8"
-            }
-        }
-    }
-
-    listOf(
-        iosX64(),
-        iosArm64(),
-        iosSimulatorArm64()
-    ).forEach { iosTarget ->
-        iosTarget.binaries.framework {
-            baseName = "androidApp"
-            isStatic = true
-        }
-    }
-
-    sourceSets {
-        androidMain.dependencies {
-            implementation(libs.androidx.activity.compose)
-        }
-        commonMain.dependencies {
-
-        }
-    }
-}
 android {
     namespace = "com.app.movie"
     compileSdk = 35
@@ -61,9 +31,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
-//    kotlinOptions {
-//        jvmTarget = "11"
-//    }
+    kotlinOptions {
+        jvmTarget = "11"
+    }
     buildFeatures {
         compose = true
     }
