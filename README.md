@@ -3,9 +3,9 @@
 PorconBrowe is a **Kotlin Multiplatform Mobile** (KMM) project that displays today's trending movies using the [TMDB API](https://developer.themoviedb.org/reference/trending-movies) (you'll need your own API key). It is structured following **Clean Architecture** principles to clearly separate domain, data, and presentation layers, ensuring maintainability and testability.
 
 <p float="left">
-  <img src=".images/home.png" width="400" />
-  <img src=".images/detail.png" width="400" />
-  <img src=".images/search.png" width="400" />
+  <img src=".images/Home.png" width="400" />
+  <img src=".images/Detail.png" width="400" />
+  <img src=".images/Search.png" width="400" />
 </p>
 
 ## 🚀 Features
