@@ -14,6 +14,7 @@ PorconBrowe is a **Kotlin Multiplatform Mobile** (KMM) project that displays tod
 * **Search**: Inline search for movies (online only).
 * **Detail View**: Shows full movie details with offline caching.
 
+
 ## 🛠 Technologies & Libraries
 
 * **[Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform)** – UI framework that targets Android, desktop, and iOS.
@@ -33,6 +34,7 @@ PorconBrowe is a **Kotlin Multiplatform Mobile** (KMM) project that displays tod
 * **iOS & Desktop Support**: Currently only Android is built; integrate and test on iOS and desktop targets.
 * **Paging Integration**: Load additional pages as the user scrolls, to reduce memory footprint.
 * **UI Testing**: Automated Compose UI tests.
+* **ProGuard Configuration**: Setup ProGuard/R8 rules for Android release builds.
 
 ## ⚙️ Usage
 
