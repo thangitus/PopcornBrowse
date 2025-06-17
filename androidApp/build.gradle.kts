@@ -18,14 +18,28 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    signingConfigs {
+        create("release") {
+            storeFile = file(project.properties["storeFile"] as String)
+            storePassword = project.properties["storePassword"] as String?
+            keyAlias = project.properties["keyAlias"] as String?
+            keyPassword = project.properties["keyPassword"] as String?
+        }
+        getByName("debug") {
+            storeFile = file(project.properties["storeFile"] as String)
+            storePassword = project.properties["storePassword"] as String?
+            keyAlias = project.properties["keyAlias"] as String?
+            keyPassword = project.properties["keyPassword"] as String?
+        }
+    }
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("release")
         }
     }
     compileOptions {

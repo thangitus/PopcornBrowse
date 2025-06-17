@@ -34,7 +34,6 @@ PorconBrowe is a **Kotlin Multiplatform Mobile** (KMM) project that displays tod
 * **iOS & Desktop Support**: Currently only Android is built; integrate and test on iOS and desktop targets.
 * **Paging Integration**: Load additional pages as the user scrolls, to reduce memory footprint.
 * **UI Testing**: Automated Compose UI tests.
-* **ProGuard Configuration**: Setup ProGuard/R8 rules for Android release builds.
 
 ## ⚙️ Usage
 
